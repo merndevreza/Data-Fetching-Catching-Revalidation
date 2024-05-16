@@ -1,10 +1,10 @@
-import getJoke from "@/utils/getJoke";
+import getJokeAxios from "@/utils/getJokeAxios";
 
 const RandomJoke = async() => {
-const joke = await getJoke()
+const joke = await getJokeAxios()
    return (
       <div>
-         {joke.value}
+         {joke.data.value}
       </div>
    );
 };
